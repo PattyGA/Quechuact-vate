@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root{
+    --red: #AA1916;
+    --blue: #3C6CA8;
+    --darkblue: #00265B;
+    --yellow: #FFD881;
+    --darkyellow: #FFBD59;
+    --green: #008F6D;
+}
+
+*{
+
+    box-sizing: border-box;
+    
+    margin: 0;
+
+    padding: 0;
+
+    text-decoration: none;
+
+    border: none;
+
+    outline: none;
+
+ }  
+
+ h1 {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 3.5em;
+    text-align: left;
+    color: #AA1916;
+ }
+
+ h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2.8em;
+ }
+
+ h3{
+    font-size: 1.8em;
+ }
+
+ p {
+    font-size: 1em;
+    color: #00265B
+ }
+
+ html{
+
+    background-color: white;
+
+ } 
+
+body{
+
+    font-family: 'Quicksand', sans-serif;
+
+    width: 1366px;
+
+    height: 2000px;
+
+    margin: 0;
+
+    background-color: white;
+}
+
+button{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #000;
+    color: white;
+    text-shadow: 2px 2px 3px #000;
+    background-color: #AA1916;
+}
+
+button:hover{
+    background-color: #831210
+}
+
+.container{
+    max-width: 1000px;
+    margin:auto;
+}
+
+header {
+    background-image: url(../Quechuactívate/img/banner.png);
+    width: auto;
+    height: 180px;
+}
+
+
+header .logo-nombre{
+    margin: 0;
+    font-family: 'Londrina Solid', cursive;
+    color: #FFBD59;
+}
+
+header .logo-img{
+    height: 50px;
+    padding: 10px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-family: 'Londrina Solid', cursive;
+    color: white
+}
+
+header a:hover{
+    background-color: #AA1916;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 800px;
+    width: 1366px;
+}
+
+#hero .video{
+display: contents;
+justify-content: left;
+}
+main{
+
+    width: 1366px;
+
+    height: 1500px;
+
+    background-color: white; 
+
+}
+
+footer{
+
+    width: 1366px;
+
+    height: 50px;
+
+    background-color: #AA1916; 
+
+}
+
+
+
