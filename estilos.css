@@ -47,6 +47,19 @@ p {
     color: #00265B
 }
 
+.beneficios p1 {
+    font-size: 20px;
+    color: #008F6D
+}
+
+.beneficios h1 {
+    color: white
+}
+
+.info h1 {
+    font-size: 2em;
+}
+
 html {
 
     background-color: white;
@@ -79,18 +92,18 @@ header {
     height: 180px;
 }
 
-header .container {
-    /* display: flex;
+/* header .container {
+    display: flex;
     flex-direction: column;
-    align-items: center; */
-}
+    align-items: center;
+} */
 
 header nav {
     display: grid;
     grid-template-areas: "logo listamenu botonIngresar";
-    grid-template-columns: min-content auto min-content ;
+    grid-template-columns: min-content auto min-content;
     align-items: center;
-    
+    padding-top: 65px;
     /*  display: flex;
     flex-direction: column;
     text-align: center;
@@ -100,7 +113,6 @@ header nav {
 .logo {
     display: flex;
     align-items: center;
-
 }
 
 .logo-nombre {
@@ -114,11 +126,11 @@ header nav {
     padding: 10px;
 }
 
-.listaMenu{
-padding: 0px 20px 0px 20px;
+.listaMenu {
+    padding: 0px 20px 0px 20px;
 }
 
- .nav-link {
+.nav-link {
     padding: 5px 12px;
     text-decoration: none;
     font-family: 'Londrina Solid', cursive;
@@ -146,19 +158,81 @@ padding: 0px 20px 0px 20px;
     background-color: #831210
 }
 
-#hero {
+.contacto {
+    border: 1px solid;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 800px;
-    width: 1366px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#hero .video {
-    display: contents;
-    justify-content: left;
+.contacto div {
+    width: 40%;
+    padding: 10px;
+
+}
+
+.contacto-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 400px;
+
+position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
+
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.beneficios {
+    background-color: #FFD881;
+    border: 1px solid;
+}
+
+.beneficios h1 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.beneficios-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+
+.beneficios-item {
+    width: 270px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.ali-info-logo {
+    height: 300px;
 }
 
 main {
