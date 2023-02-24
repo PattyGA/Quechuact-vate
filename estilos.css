@@ -11,19 +11,12 @@
 }
 
 * {
-
     box-sizing: border-box;
-
-    margin: 0;
-
-    padding: 0;
-
+    /*margin: 0;
+    padding: 0; */
     text-decoration: none;
-
-    border: none;
-
-    outline: none;
-
+    /*   border: none;
+    outline: none; */
 }
 
 h1 {
@@ -61,21 +54,13 @@ p {
 }
 
 html {
-
     background-color: white;
-
 }
 
 body {
-
     font-family: 'Quicksand', sans-serif;
 
-    width: 1366px;
-
-    height: 2000px;
-
     margin: 0;
-
     background-color: white;
 }
 
@@ -134,18 +119,22 @@ header nav {
     padding: 5px 12px;
     text-decoration: none;
     font-family: 'Londrina Solid', cursive;
-    color: white
+    color: white;
+    -moz-transition: font-size 150ms linear Os;
+	-webkit-transition: font-size 150ms linear Os;
+	transition: font-size 150ms linear 0s;
 }
 
 .nav-link:hover {
     background-color: #AA1916;
+    font-size: 19px;
 }
 
 .botonIngresar {
     font-family: 'Londrina Solid', cursive;
     font-size: 1em;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 50px;
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #000;
@@ -168,8 +157,8 @@ header nav {
 .contacto div {
     width: 40%;
     padding: 10px;
-
 }
+
 
 .contacto-form {
     display: flex;
@@ -184,10 +173,30 @@ top: 50%;
   transform: translateY(-50%); */
 }
 
-.contacto-form form {
+.contacto-form label{
+    margin: 15px 0px 4px 0px;
+}
+
+.contacto-form form fieldset {
     display: flex;
     flex-direction: column;
 
+}
+
+.botonFormulario {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 3px #000;
+    background-color: #AA1916;
+}
+
+.botonFormulario:hover {
+    background-color: #831210
 }
 
 .beneficios {
@@ -211,7 +220,6 @@ top: 50%;
 
 .beneficios-item {
     width: 270px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,21 +244,11 @@ top: 50%;
 }
 
 main {
-
-    width: 1366px;
-
-    height: 1500px;
-
+    
     background-color: white;
-
 }
 
 footer {
-
-    width: 1366px;
-
     height: 50px;
-
     background-color: #AA1916;
-
 }
