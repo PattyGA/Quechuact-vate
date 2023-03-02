@@ -10,6 +10,20 @@
     --green: #008F6D;
 }
 
+.fontawesomeicon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+.Download::before {
+    font: var(--fa-font-solid);
+    content: ' \f019';
+
+}
+
 * {
     box-sizing: border-box;
     /*    margin: 0;
@@ -255,9 +269,9 @@ top: 50%;
     position: relative;
 }
 
-.programaTexto{
-width: 50%;
-padding: 5%;
+.programaTexto {
+    width: 50%;
+    padding: 5%;
 }
 
 .programaBar {
@@ -267,18 +281,23 @@ padding: 5%;
     left: 50%;
     transform: translate(-50%, -80%);
     width: 70%;
-    display:flex;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #838383;
     border: 3px solid #6b6a6a;
     border-radius: 20px;
-    
+
 }
 
-.programaBarItem {   
+.programaBarItem {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     margin: 0px 10px 0px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .programaBarItem img {
@@ -290,6 +309,133 @@ padding: 5%;
     color: white;
     margin: 0px 10px 0px 10px;
     font-size: 20px;
+}
+
+.programaSec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.programaBienvenidos h1 {
+    margin: auto;
+    background-color: #831210;
+    color: white;
+    width: fit-content;
+    padding: 0px 20px;
+}
+
+.programaBienvenidos .videoContenedor {
+    width: fit-content;
+    padding: 20px 80px;
+    background-color: #FFBD59;
+    border: 5px solid #ff9a03;
+}
+
+.programaBienvenidos video {
+    height: 350px;
+    border: 1px solid black;
+}
+
+
+
+.programaPlanItem {
+    margin: 10px;
+    padding: 15px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#cronoCurso {
+    border-color: #831210;
+    color: #831210;
+}
+
+#planEstudio {
+    border-color: #00265B;
+    color: #00265B;
+}
+
+#neoLMS {
+    border-color: #008F6D;
+    color: #008F6D;
+}
+
+.programaSec3 {
+    padding: 50px;
+}
+
+.programaSec3 h1 {
+    text-align: center;
+
+}
+
+
+.rutaAprendiBarra {
+    text-align: center;
+}
+
+.rutaAprendiTerminar {
+    text-align: center;
+    font-size: 8px;
+    border: 3px solid #3c6ca8;
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+}
+
+.terminarCont {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.terminarContItems {
+    display: flex;
+    font-size: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.terminarContItems img {
+    height: 40px;
+}
+
+.terminarContItems span {
+    padding: 0px 10px;
+}
+
+.programaSec4 {
+    background-color: #e6e6e6;
+
+}
+
+.programaSec4 h1 {
+    text-align: center;
+}
+
+.requisitosCont {
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.requisitosContItems {
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+}
+
+
+.requisitosCont img {
+    height: 100px;
 }
 
 /* ---- */
