@@ -33,8 +33,30 @@
     outline: none; */
 }
 
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+}
+
+.flexcontaineritem {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
 h1 {
     margin: 0px;
+    padding: 10px 0px;
     font-family: 'Londrina Solid', cursive;
     font-size: 3.5em;
     text-align: left;
@@ -165,7 +187,7 @@ header nav {
 }
 
 .contacto {
-    border: 1px solid;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -204,7 +226,6 @@ top: 50%;
     font-family: 'Londrina Solid', cursive;
     font-size: 1em;
     font-weight: bold;
-    border: 1px solid black;
     padding: 10px 20px;
     border-radius: 10px;
     color: white;
@@ -218,7 +239,7 @@ top: 50%;
 
 .beneficios {
     background-color: #FFD881;
-    border: 1px solid;
+
 }
 
 .beneficios h1 {
@@ -244,7 +265,6 @@ top: 50%;
 
 
 .info {
-    border: 1px solid;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -339,8 +359,6 @@ top: 50%;
     border: 1px solid black;
 }
 
-
-
 .programaPlanItem {
     margin: 10px;
     padding: 15px;
@@ -371,18 +389,11 @@ top: 50%;
     padding: 50px;
 }
 
-.programaSec3 h1 {
-    text-align: center;
-
-}
-
-
 .rutaAprendiBarra {
     text-align: center;
 }
 
 .rutaAprendiTerminar {
-    text-align: center;
     font-size: 8px;
     border: 3px solid #3c6ca8;
     width: 85%;
@@ -416,29 +427,65 @@ top: 50%;
 
 }
 
-.programaSec4 h1 {
-    text-align: center;
-}
-
-.requisitosCont {
-
-    display: flex;
-    justify-content: space-evenly;
-
-}
-
-.requisitosContItems {
-    padding: 40px;
-    width: 30%;
-    text-align: center;
-}
-
-
-.requisitosCont img {
+.programaSec4 .flexcontainer img {
     height: 100px;
 }
 
 /* ---- */
+
+/* CONOCE NEO CSS */
+
+.conoceSec1 .flexcontaineritem {
+    width: 40%;
+    text-align: left;
+    align-items: normal;
+}
+
+.conoceSec2 {
+    background-color: #FFD881;
+    padding: 20px;
+}
+
+.NEOgrid {
+    display: grid;
+    grid-template-areas: "GRID1 GRID1"
+        "GRID3 GRID4";
+    grid-template-columns: 285px 510px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.NEOgrid img {
+    height: 400px;
+}
+
+.GRID1 {
+    grid-area: GRID1;
+    background-color: white;
+    padding: 5px 5px 0px 5px;
+
+}
+
+.NEOgrid p {
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    width: fit-content;
+    background: #008F6D;
+    padding: 3px 8px;
+    filter: url(#goo);
+}
+.NEOgrid span {
+    font-weight: bolder;
+}
+
+.GRID3 , .GRID4{
+    padding: 10px;
+}
+
+/* ---- */
+
 main {
     background-color: white;
 }
@@ -451,7 +498,6 @@ footer {
     grid-template-areas:
         "logoFooter listaMenu socials"
         "textoFooters textoFooters textoFooters";
-
     height: 170px;
     background-image: url(img/Footerbckg.png);
 }
